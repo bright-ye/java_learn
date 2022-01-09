@@ -400,6 +400,7 @@ public class Test15 {
 }
 
 class UnsafeTest {
+    // 成员变量
     ArrayList<String> arrayList = new ArrayList<>();
 
     public void method1() {
@@ -419,7 +420,7 @@ class UnsafeTest {
 }
 ```
 
-解决方法，将arrayList改为成员变量，就可以解决线程安全问题了：
+解决方法，将arrayList改为局部变量，就可以解决线程安全问题了：
 
 ```java
 class SafeTest {
